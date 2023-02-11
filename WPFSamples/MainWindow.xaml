@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPFSamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSamples"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <!-- Grid component placed by default to preserve proportional sizing-->
+
+    <Grid Height="584" VerticalAlignment="Bottom">
+        <!-- 
+            Buttons:
+                Horizontal alignment
+                Vertical alignment
+                Margins: Left, Top, Right, Bottom        
+        -->
+
+        <!-- Top line -->
+        <Button x:Name="btnTopLeftSideButton" Content="btnTopLeftSideButton" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnTopLeftSideButton_Click" Height="200" Width="200"/>
+        <Button x:Name="btnTopMidButton" Content="btnTopMidButton" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="200" Click="btnTopMidButton_Click"/>
+        <Button x:Name="btnTopRightSideButton" Content="btnTopRightSideButton" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="200" Click="btnTopRightSideButton_Click"/>
+
+        <!-- Mid line -->
+        <Button x:Name="btnMidLeftSideButton" Content="btnMidLeftSideButton" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Height="200" Click="btnMidLeftSideButton_Click"/>
+        <Button x:Name="btnMidMidButton" Content="btnMidMidButton" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200" Click="btnMidMidButton_Click" />
+        <Button x:Name="btnMidRightSideButton" Content="btnMidRightSideButton" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Height="200" Click="btnMidRightSideButton_Click"/>
+
+        <!-- Bottom line -->
+        <Button x:Name="btnBottomLeftButton" Content="btnBottomLeftButton" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="200" Click="btnBottomLeftButton_Click"/>
+        <Button x:Name="btnMidBottomButton" Content="btnMidBottomButton" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200" Height="200" Click="btnMidBottomButton_Click"/>
+        <Button x:Name="btnBottomRightButton" Content="btnBottomRightButton" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="200" Click="btnBottomRightButton_Click"/>
+
+        <!-- Checkboxes-->
+
+    </Grid>
+
+</Window>
