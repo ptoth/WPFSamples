@@ -24,80 +24,23 @@ namespace WPFSamples
         public MainWindow()
         {
             InitializeComponent();
-
-            btnTopLeftSideButton.Content = "";
-            btnTopMidButton.Content = "";
-            btnTopRightSideButton.Content = "";
-            btnMidLeftSideButton.Content = "";
-            btnMidMidButton.Content = "";
-            btnMidRightSideButton.Content = "";
-            btnBottomLeftButton.Content = "";
-            btnMidBottomButton.Content = "";
-            btnBottomRightButton.Content = "";
         }
 
-        private bool IsButtonChecked(Button gomb)
+        private void pnlMainGrid_MouseUp(object sender, MouseEventArgs e)
         {
-            if (gomb.Content.Equals("O") || gomb.Content.Equals("X"))
-            { return true; }
-            else 
-            { return false; }
+            MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
         }
-
-        private void ellenorzes()
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
-
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
         }
 
-
-        private void btnTopLeftSideButton_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (IsButtonChecked(btnTopLeftSideButton))
-            {
-                MessageBox.Show("Ez a hely már foglalt!");
-            }
-            else
-            {
-                btnTopLeftSideButton.Content = "X";
-            }
+            checkBox.IsChecked = true;
         }
 
-        private void btnTopMidButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnTopRightSideButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMidLeftSideButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMidMidButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMidRightSideButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBottomLeftButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMidBottomButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBottomRightButton_Click(object sender, RoutedEventArgs e)
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
