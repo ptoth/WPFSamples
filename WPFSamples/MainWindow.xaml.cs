@@ -26,21 +26,20 @@ namespace WPFSamples
             InitializeComponent();
         }
 
-        private void pnlMainGrid_MouseUp(object sender, MouseEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
-        }
-        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
-        {
-            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+            Window1 rendeles = new Window1();
+            // form megnyitása rendes ablakként
+            // enged fókuszt váltani
+            //rendeles.Show();
+
+            // form megnyitása párbeszéd ablakként
+            // nem enged fókuszt váltani
+            rendeles.ShowDialog();
+
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            checkBox.IsChecked = true;
-        }
-
-        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
         }
