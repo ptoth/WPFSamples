@@ -44,15 +44,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFSamples"
         mc:Ignorable="d"
-        Title="Form1" Height="768" Width="1024">
-    <Grid>
-        <Image x:Name="image" HorizontalAlignment="Center" Height="487" VerticalAlignment="Center" Width="610" Source="/pohardesszert.JPG"/>
-        <Menu x:Name="menu" Margin="0,0,0,0" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-            <Button Content="File" Click="Button_Click_1"/>
-            <Button Content="Sütemények" Click="Button_Click"/>
-            <Button Content="Névjegy"/>
-        </Menu>
-
+        Title="Form1" Height="480" Width="640">
+    <Grid Margin="0,0,0,-6">
+        <Button x:Name="button" 
+                Content="Ellenőriz" 
+                HorizontalAlignment="Left" 
+                Margin="439,10,0,0" 
+                VerticalAlignment="Top" 
+                Height="32" Width="141" 
+                FontSize="20" Click="button_Click"/>
+        <TextBox x:Name="TextBoxInput" 
+                 HorizontalAlignment="Left" 
+                 Margin="10,10,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="TextBoxInput" 
+                 VerticalAlignment="Top" 
+                 Width="424" Height="32" 
+                 FontSize="20" 
+                 />
+        <Label x:Name="label" Content="Label" 
+               HorizontalAlignment="Left" 
+               Margin="10,76,0,0" 
+               VerticalAlignment="Top" 
+               Height="67" Width="233"/>
     </Grid>
     <!-- Grid component placed by default to preserve proportional sizing-->
 
